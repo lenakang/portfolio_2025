@@ -1,0 +1,145 @@
+.header {
+    position: relative;
+    background: --background;
+    border-bottom: 1px solid var(--gray-700);
+    z-index: 100;
+
+    .header_inner {
+        width: 100%;
+        max-width: var(--container-width);
+        border-left: 1px solid var(--gray-700);
+        border-right: 1px solid var(--gray-700);
+        margin: 0 auto;
+        height: 8rem;
+        display: flex;
+
+        > .logo {
+            display: flex;
+
+            a {
+                font-size: 3rem;
+                font-weight: bold;
+                line-height: 1.2;
+                color: var(--gray-900);
+                border-right: 1px solid var(--gray-700);
+            }
+        }
+
+        > .nav {
+            flex-grow: 1;
+
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+            height: 100%;
+
+            > .nav_top {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--gray-700);
+
+                > .nav_top_center {
+                    display: flex;
+                    width: 100%;
+
+                    > .nav_menu {
+                        display: flex;
+                        width: fit-content;
+                        font-size: 2.2rem;
+
+                        .nav_menu_item {
+                            a {
+                                color: var(--gray-900);
+                                border-right: 1px solid var(--gray-700);
+                                display: flex;
+                                align-items: center;
+                                height: 100%;
+                                padding: 1rem;
+                                line-height: 1;
+                                transition: 0s;
+                                z-index: 10;
+
+                                &:hover,
+                                &:active {
+                                    color: var(--highlight);
+                                }
+                            }
+                        }
+                    }
+                    > .nav_search {
+                        position: relative;
+                        width: 100%;
+                        border: 1px solid red;
+                        display: flex;
+
+                        .nav_search_inner {
+                            position: relative;
+                            height: 100%;
+                            display: flex;
+                            text-align: center;
+
+                            input {
+                                padding: 0.2rem 1rem;
+                                border: none;
+                                outline: none;
+                                width: 100%;
+                                font-size: 1.8rem;
+                                color: var(--gray-700);
+                            }
+                        }
+
+                        button {
+                            border: none;
+                            background-color: var(--background);
+
+                            svg {
+                                width: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                > .nav_top_right {
+                    width: fit-content;
+                    position: relative;
+                    display: flex;
+                }
+            }
+
+            > .nav_bottom {
+                display: none;
+                a {
+                    display: block;
+                    color: var(--gray-700);
+                    svg {
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-depth2 {
+    padding: 0.75rem 2rem;
+    background: var(--gray-50);
+    border-top: 1px solid var(--gray-200);
+}
+
+.depth2-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.depth2-list a {
+    color: var(--gray-700);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.depth2-list a:hover {
+    color: var(--highlight);
+}
