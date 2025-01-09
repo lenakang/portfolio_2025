@@ -1,9 +1,18 @@
+"use client";
+
 import Link from "next/link";
-import styles from "./nav.module.scss";
+import styles from "./header.module.scss";
 import { Button } from "../../Form";
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 
-export default function Nav() {
+export default function index() {
+    const scrollToSection = (id: string) => {
+        const section = document.getElementById(id);
+        section?.scrollIntoView({ behavior: "smooth" });
+    };
+
+    const links = ["About", "Skills", "Career", "Projects"];
+
     return (
         <header className={styles.header}>
             <div className={styles.header_container}>
@@ -17,18 +26,18 @@ export default function Nav() {
                     <div className={styles.nav_top}>
                         <div className={styles.nav_top_center}>
                             <ul className={styles.nav_menu}>
-                                <li className={styles.nav_menu_item}>
-                                    <Link href="/">Home</Link>
-                                </li>
-                                <li className={styles.nav_menu_item}>
-                                    <Link href="/">About</Link>
-                                </li>
-                                <li className={styles.nav_menu_item}>
-                                    <Link href="/">Skills</Link>
-                                </li>
-                                <li className={styles.nav_menu_item}>
-                                    <Link href="/">Career</Link>
-                                </li>
+                                {links.map((link) => (
+                                    <li key={link}>
+                                        <button
+                                            className={styles.nav_menu_item}
+                                            onClick={() =>
+                                                scrollToSection(link)
+                                            }
+                                        >
+                                            {link}
+                                        </button>
+                                    </li>
+                                ))}
                             </ul>
                             <form className={styles.nav_search}>
                                 <div className={styles.nav_search_inner}>
