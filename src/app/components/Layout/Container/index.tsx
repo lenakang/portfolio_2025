@@ -1,4 +1,6 @@
 import { ReactNode } from "react";
+import styles from "./container.module.scss";
+import clsx from "clsx";
 
 interface IContainer {
     children: ReactNode;
@@ -6,5 +8,5 @@ interface IContainer {
 }
 
 export default function index({ children, className }: IContainer) {
-    return <main className={`container ${className}`}>{children}</main>;
+    return <div className={clsx(className, styles.container)}>{children}</div>;
 }

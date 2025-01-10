@@ -12,11 +12,8 @@ $nav-right-size: 12rem;
     z-index: 100;
 
     .header_container {
-        width: 100%;
-        max-width: var(--container-width);
         border-left: 1px solid var(--gray-700);
         border-right: 1px solid var(--gray-700);
-        margin: 0 auto;
         height: 8rem;
         display: flex;
 
@@ -70,6 +67,7 @@ $nav-right-size: 12rem;
 
                         .nav_menu_item {
                             color: var(--gray-900);
+                            text-transform: capitalize;
                             border-right: 1px solid var(--gray-700);
                             display: flex;
                             align-items: center;

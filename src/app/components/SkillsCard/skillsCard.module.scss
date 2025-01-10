@@ -1,0 +1,145 @@
+.card {
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+        background: #ffe3f4;
+
+        .icon,
+        .skill {
+            color: #000; // Hover 시 더 진한 모노톤 텍스트 (검정색)
+        }
+    }
+
+    // &--frontend {
+    //     background: none;
+    //     transition: background 0.3s ease, color 0.3s ease;
+
+    //     .icon,
+    //     .skill {
+    //         color: inherit; // 기본 상태에서는 색 없음
+    //         transition: color 0.3s ease;
+    //     }
+
+    //     &:hover {
+    //         background: linear-gradient(
+    //             to bottom right,
+    //             #e0f7fa,
+    //             #f0fbfc
+    //         ); // Hover 시 배경색 적용
+
+    //         .icon,
+    //         .skill {
+    //             color: #007b83; // Hover 시 텍스트 색상 적용
+    //         }
+    //     }
+    // }
+
+    // &--backend {
+    //     background: none;
+    //     transition: background 0.3s ease, color 0.3s ease;
+
+    //     .icon,
+    //     .skill {
+    //         color: inherit;
+    //         transition: color 0.3s ease;
+    //     }
+
+    //     &:hover {
+    //         background: linear-gradient(
+    //             to bottom right,
+    //             #e8f0fc,
+    //             #f3f8ff
+    //         ); // Hover 시 배경색 적용
+    //         .icon,
+    //         .skill {
+    //             color: #3a5f9f; // Hover 시 텍스트 색상 적용
+    //         }
+    //     }
+    // }
+
+    // &--version {
+    //     background: none;
+    //     transition: background 0.3s ease, color 0.3s ease;
+
+    //     .icon,
+    //     .skill {
+    //         color: inherit;
+    //         transition: color 0.3s ease;
+    //     }
+
+    //     &:hover {
+    //         background: linear-gradient(
+    //             to bottom right,
+    //             #fff8dc,
+    //             #fffae6
+    //         ); // Hover 시 배경색 적용
+    //         .icon,
+    //         .skill {
+    //             color: #d4a017; // Hover 시 텍스트 색상 적용
+    //         }
+    //     }
+    // }
+
+    // &--tools {
+    //     background: none;
+    //     transition: background 0.3s ease, color 0.3s ease;
+
+    //     .icon,
+    //     .skill {
+    //         color: inherit;
+    //         transition: color 0.3s ease;
+    //     }
+
+    //     &:hover {
+    //         background: linear-gradient(
+    //             to bottom right,
+    //             #fad6e4,
+    //             #f9ebf5
+    //         ); // Hover 시 배경색 적용
+    //         .icon,
+    //         .skill {
+    //             color: #e85b97; // Hover 시 텍스트 색상 적용
+    //         }
+    //     }
+    // }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 2.4rem;
+
+        .icon {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a202c;
+            text-transform: capitalize;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+
+        .skill {
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 0.8rem;
+            padding: 0.8rem 1.6rem;
+        }
+    }
+}

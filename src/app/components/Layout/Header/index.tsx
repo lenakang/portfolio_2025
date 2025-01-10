@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./header.module.scss";
-import { Button } from "../../Form";
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
+import { Button } from "../../Form";
+import { Container } from "..";
+import styles from "./header.module.scss";
 
 export default function index() {
     const scrollToSection = (id: string) => {
@@ -11,11 +12,11 @@ export default function index() {
         section?.scrollIntoView({ behavior: "smooth" });
     };
 
-    const links = ["About", "Skills", "Career", "Projects"];
+    const links = ["about", "skills", "career", "projects"];
 
     return (
         <header className={styles.header}>
-            <div className={styles.header_container}>
+            <Container className={styles.header_container}>
                 <h1 className={styles.logo}>
                     <Link href="/">
                         LENA&apos;s <br />
@@ -90,7 +91,7 @@ export default function index() {
                         </Link>
                     </div>
                 </nav>
-            </div>
+            </Container>
         </header>
     );
 }
