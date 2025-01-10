@@ -38,7 +38,7 @@ export const skills = [
     },
     {
         category: "version",
-        title: "Version Control & Collaboration",
+        title: "Version Control",
         icon: FolderOpenIcon,
         stacks: ["Git", "GitHub", "Bitbucket", "Jira"],
     },
