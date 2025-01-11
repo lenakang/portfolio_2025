@@ -1,130 +1,21 @@
 .card {
-    // padding: 2rem;
-    // border-radius: 1.6rem;
-    // transition: all 0.3s ease-in-out;
-
     &:first-child {
         border-top: 1px solid var(--gray-700);
         margin-top: 2rem;
     }
 
-    //
     border-bottom: 1px solid var(--gray-700);
     padding: 2rem;
 
-    // display
     display: flex;
     align-items: flex-start;
-
-    // &:hover {
-    //     border: 1px solid var(--gray-700);
-
-    //     .icon {
-    //         color: var(--highlight);
-    //     }
-    // }
-
-    // &--frontend {
-    //     background: none;
-    //     transition: background 0.3s ease, color 0.3s ease;
-
-    //     .icon,
-    //     .skill {
-    //         color: inherit; // 기본 상태에서는 색 없음
-    //         transition: color 0.3s ease;
-    //     }
-
-    //     &:hover {
-    //         background: linear-gradient(
-    //             to bottom right,
-    //             #e0f7fa,
-    //             #f0fbfc
-    //         ); // Hover 시 배경색 적용
-
-    //         .icon,
-    //         .skill {
-    //             color: #007b83; // Hover 시 텍스트 색상 적용
-    //         }
-    //     }
-    // }
-
-    // &--backend {
-    //     background: none;
-    //     transition: background 0.3s ease, color 0.3s ease;
-
-    //     .icon,
-    //     .skill {
-    //         color: inherit;
-    //         transition: color 0.3s ease;
-    //     }
-
-    //     &:hover {
-    //         background: linear-gradient(
-    //             to bottom right,
-    //             #e8f0fc,
-    //             #f3f8ff
-    //         ); // Hover 시 배경색 적용
-    //         .icon,
-    //         .skill {
-    //             color: #3a5f9f; // Hover 시 텍스트 색상 적용
-    //         }
-    //     }
-    // }
-
-    // &--version {
-    //     background: none;
-    //     transition: background 0.3s ease, color 0.3s ease;
-
-    //     .icon,
-    //     .skill {
-    //         color: inherit;
-    //         transition: color 0.3s ease;
-    //     }
-
-    //     &:hover {
-    //         background: linear-gradient(
-    //             to bottom right,
-    //             #fff8dc,
-    //             #fffae6
-    //         ); // Hover 시 배경색 적용
-    //         .icon,
-    //         .skill {
-    //             color: #d4a017; // Hover 시 텍스트 색상 적용
-    //         }
-    //     }
-    // }
-
-    // &--tools {
-    //     background: none;
-    //     transition: background 0.3s ease, color 0.3s ease;
-
-    //     .icon,
-    //     .skill {
-    //         color: inherit;
-    //         transition: color 0.3s ease;
-    //     }
-
-    //     &:hover {
-    //         background: linear-gradient(
-    //             to bottom right,
-    //             #fad6e4,
-    //             #f9ebf5
-    //         ); // Hover 시 배경색 적용
-    //         .icon,
-    //         .skill {
-    //             color: #e85b97; // Hover 시 텍스트 색상 적용
-    //         }
-    //     }
-    // }
 
     &__header {
         display: flex;
         align-items: center;
         gap: 1.2rem;
-        margin-bottom: 2.4rem;
-
-        //
         width: 20rem;
+        margin-bottom: 2.4rem;
 
         .icon {
             width: 2.4rem;
@@ -143,15 +34,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1.2rem;
-
-        //
         width: calc(100% - 20rem);
 
         .skill {
             border-radius: 0.8rem;
-            padding: 0.8rem 1.6rem;
-
-            //
             padding: 0.3rem 1.3rem;
             border: 1px solid var(--gray-400);
             background: var(--background);
