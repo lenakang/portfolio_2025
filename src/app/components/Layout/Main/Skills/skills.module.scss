@@ -1,0 +1,12 @@
+.skills {
+    &__inner {
+        padding: 10rem 0;
+        border-top: 1px solid var(--gray-700);
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+}

@@ -1,25 +1,14 @@
 .card {
-    &:first-child {
-        border-top: 1px solid var(--gray-700);
-        margin-top: 2rem;
-    }
-
-    border-bottom: 1px solid var(--gray-700);
-    padding: 2rem;
-
-    display: flex;
-    align-items: flex-start;
-
     &__header {
         display: flex;
         align-items: center;
-        gap: 1.2rem;
+        gap: 1rem;
         width: 20rem;
-        margin-bottom: 2.4rem;
+        margin-bottom: 3rem;
 
         .icon {
-            width: 2.4rem;
-            height: 2.4rem;
+            font-style: normal;
+            font-size: 2rem;
         }
 
         .title {
@@ -37,10 +26,16 @@
         width: calc(100% - 20rem);
 
         .skill {
-            border-radius: 0.8rem;
-            padding: 0.3rem 1.3rem;
-            border: 1px solid var(--gray-400);
-            background: var(--background);
+            border-radius: 2rem;
+            padding: 0.8rem 1.6rem;
+            border: 1px solid var(--gray-300);
+            background: var(--gray-100);
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                background: var(--pink-200);
+                cursor: default;
+            }
         }
     }
 }

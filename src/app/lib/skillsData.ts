@@ -1,15 +1,8 @@
-import {
-    WindowIcon,
-    ServerStackIcon,
-    FolderOpenIcon,
-    PaintBrushIcon,
-} from "@heroicons/react/24/solid";
-
-export const skills = [
+export const skillsData = [
     {
         category: "frontend",
         title: "Frontend",
-        icon: WindowIcon,
+        icon: "💻",
         stacks: [
             "React.js",
             "Next.js",
@@ -33,19 +26,19 @@ export const skills = [
     {
         category: "backend",
         title: "Backend",
-        icon: ServerStackIcon,
+        icon: "🗄️",
         stacks: ["Firebase", "Prisma", "Planetscale"],
     },
     {
         category: "version",
         title: "Version Control",
-        icon: FolderOpenIcon,
+        icon: "📁",
         stacks: ["Git", "GitHub", "Bitbucket", "Jira"],
     },
     {
         category: "tools",
         title: "Design Tools",
-        icon: PaintBrushIcon,
+        icon: "✏️",
         stacks: ["Figma", "Zeplin", "Adobe Photoshop", "Adobe Illustrator"],
     },
 ];
