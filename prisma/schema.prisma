@@ -9,9 +9,11 @@ datasource db {
 
 model Project {
   id Int @id @default(autoincrement())
-  name String
-  image String?
-  url String?
+  name String @unique
+  photo String?
+  website String?
+  description String?
+  company String?
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }

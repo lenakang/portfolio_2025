@@ -12,7 +12,7 @@ export default function index() {
         section?.scrollIntoView({ behavior: "smooth" });
     };
 
-    const links = ["about", "skills", "career", "projects"];
+    const links = ["about", "skills", "projects", "career"];
 
     return (
         <header className={styles.header}>
