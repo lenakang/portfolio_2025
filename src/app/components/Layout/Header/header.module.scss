@@ -5,7 +5,7 @@ $nav-right-size: 12rem;
     width: 100%;
     background: var(--background);
     border-bottom: 1px solid var(--gray-700);
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
