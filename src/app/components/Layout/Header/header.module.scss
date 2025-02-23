@@ -11,7 +11,7 @@ $nav-right-size: 12rem;
     z-index: 100;
 
     .header_container {
-        height: 8rem;
+        height: var(--height);
         display: flex;
 
         > .logo {

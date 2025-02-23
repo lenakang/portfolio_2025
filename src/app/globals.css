@@ -11,7 +11,7 @@
     --gray-200: #eeeeee;
     --gray-100: #f9f9f9;
     --gray-50: #fafafa;
-    --site-padding: 2rem;
+    --height: 8rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +37,8 @@ html {
 }
 
 body {
+    padding-top: var(--height);
+
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
