@@ -1,37 +1,37 @@
 .projects {
-    padding: 10rem 0;
-    background: var(--foreground);
-    overflow: hidden;
+  padding: var(--inner_padding) 0;
+  background: var(--foreground);
+  overflow: hidden;
 
-    &__intro {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        color: var(--background);
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--background);
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: scrollLeft 40s linear infinite;
+    will-change: transform;
+
+    &_item {
+      width: 35rem;
+      height: 35rem;
+      flex-shrink: 0;
+      border-radius: 1rem;
+      overflow: hidden;
     }
-
-    &__list {
-        display: flex;
-        gap: 2rem;
-        white-space: nowrap;
-        animation: scrollLeft 40s linear infinite;
-        will-change: transform;
-
-        &_item {
-            width: 35rem;
-            height: 35rem;
-            flex-shrink: 0;
-            border-radius: 1rem;
-            overflow: hidden;
-        }
-    }
+  }
 }
 
 @keyframes scrollLeft {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

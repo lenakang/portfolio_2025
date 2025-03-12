@@ -1,52 +1,53 @@
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
-    --highlight: #e85b97;
-    --pink-200: #ffe3f4;
-    --gray-900: #212121;
-    --gray-800: #424242;
-    --gray-700: #616161;
-    --gray-400: #bdbdbd;
-    --gray-300: #dddddd;
-    --gray-200: #eeeeee;
-    --gray-100: #f9f9f9;
-    --gray-50: #fafafa;
-    --height: 8rem;
+  --background: #ffffff;
+  --foreground: #171717;
+  --highlight: #e85b97;
+  --pink-200: #ffe3f4;
+  --gray-900: #212121;
+  --gray-800: #424242;
+  --gray-700: #616161;
+  --gray-400: #bdbdbd;
+  --gray-300: #dddddd;
+  --gray-200: #eeeeee;
+  --gray-100: #f9f9f9;
+  --gray-50: #fafafa;
+  --height: 8rem;
+  --inner_padding: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    /* 62.5% of 16px browser font size is 10px */
-    /* 16px * 0.625 = 10px */
-    font-size: 62.5%;
-    -webkit-text-size-adjust: 100%; /* iOS 폰트 확대 방지 */
+  /* 62.5% of 16px browser font size is 10px */
+  /* 16px * 0.625 = 10px */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%; /* iOS 폰트 확대 방지 */
 }
 
 body {
-    padding-top: var(--height);
+  padding-top: var(--height);
 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 1.6rem;
-    color: #333;
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img,
@@ -54,42 +55,42 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button,
 input,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 button {
-    background: inherit;
-    border: inherit;
-    outline: none;
+  background: inherit;
+  border: inherit;
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
+  html {
+    color-scheme: dark;
+  }
 }

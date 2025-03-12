@@ -1,20 +1,20 @@
 .about {
-    text-align: center;
+  text-align: center;
 
-    &__inner {
-        padding: 10rem 0;
+  &__inner {
+    padding: var(--inner_padding) 0;
 
-        h2 {
-            color: var(--foreground);
-            font-size: 6rem;
-            line-height: 1.2;
-            margin-bottom: 6rem;
-            border: none;
-        }
-
-        p {
-            font-size: 1.8rem;
-            font-weight: normal;
-        }
+    h2 {
+      color: var(--foreground);
+      font-size: 6rem;
+      line-height: 1.2;
+      margin-bottom: 6rem;
+      border: none;
     }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+  }
 }
