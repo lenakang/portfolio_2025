@@ -3,17 +3,23 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  url  	    = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Project {
-  id Int @id @default(autoincrement())
-  name String @unique
-  photo String?
-  website String?
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  photo       String?
+  website     String?
   description String?
-  company String?
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  company     String?
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model playing_with_neon {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value Float? @db.Real
 }
