@@ -5,12 +5,12 @@ import Career from "./Career/Career";
 import Projects from "./Projects/Projects";
 
 export default function index() {
-    return (
-        <main className={styles.main}>
-            <About />
-            <Skills />
-            <Projects />
-            <Career />
-        </main>
-    );
+  return (
+    <main className={styles.main}>
+      <About />
+      <Skills />
+      <Projects />
+      <Career />
+    </main>
+  );
 }
