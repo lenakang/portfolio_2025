@@ -3,7 +3,10 @@ export default function scrollToSection(id: string) {
   if (section) {
     const rootStyle = getComputedStyle(document.documentElement);
     const heightInRem = rootStyle.getPropertyValue("--height").trim();
-    console.log("rootStyle", rootStyle);
-    console.log("heightInRem", heightInRem);
+    const rootFontSize = parseFloat(rootStyle.fontSize);
+    const heightInPx = parseFloat(heightInRem) * rootFontSize;
+    const top = section.offsetTop - heightInPx;
+
+    window.scrollTo({ top, behavior: "smooth" });
   }
 }
