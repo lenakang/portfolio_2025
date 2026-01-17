@@ -1,26 +1,28 @@
-"use client";
-
-import { useQuery } from "@tanstack/react-query";
 import { Container } from "../components/Layout";
-import { fetchProjects } from "../lib/fetchProjects";
+import ProjectList from "../components/ProjectList/ProjectList";
+import db from "../lib/db";
 
-export default function page() {
-  const { data, isError, isLoading } = useQuery({
-    queryKey: ["projects"],
-    queryFn: fetchProjects,
+interface Project {
+  id: number;
+  name: string;
+  photo: string | null;
+}
+
+export default async function Page() {
+  const projects: Project[] = await db.project.findMany({
+    select: {
+      id: true,
+      name: true,
+      photo: true,
+    },
   });
-
-  if (isError) return "Error!";
-  if (isLoading) return "Loading...";
 
   return (
     <Container>
       <h1>Projects</h1>
-      <ul>
-        {data?.map((project: any) => (
-          <li key={project.id}>{project.name}</li>
-        ))}
-      </ul>
+      {projects.map((project: Project) => (
+        <ProjectList key={project.id} {...project} />
+      ))}
     </Container>
   );
 }
