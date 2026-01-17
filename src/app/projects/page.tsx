@@ -1,6 +1,7 @@
 import { Container } from "../components/Layout";
 import ProjectList from "../components/ProjectList/ProjectList";
 import db from "../lib/db";
+import styles from "./projects.module.scss";
 
 interface Project {
   id: number;
@@ -18,11 +19,13 @@ export default async function Page() {
   });
 
   return (
-    <Container>
-      <h1>Projects</h1>
-      {projects.map((project: Project) => (
-        <ProjectList key={project.id} {...project} />
-      ))}
-    </Container>
+    <section className={styles.projects}>
+      <Container>
+        <h1>Projects</h1>
+        {projects.map((project: Project) => (
+          <ProjectList key={project.id} {...project} />
+        ))}
+      </Container>
+    </section>
   );
 }
