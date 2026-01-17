@@ -1,7 +1,7 @@
 import scrollToSection from "@/app/lib/scrollToSection";
 import styles from "./header.module.scss";
 
-const links = ["home", "skills", "projects", "career"];
+const links = ["skills", "projects", "career"];
 
 export default function NavMenu() {
   return (
