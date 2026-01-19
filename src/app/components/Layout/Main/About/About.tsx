@@ -1,6 +1,5 @@
 import { Container } from "../..";
 import styles from "./about.module.scss";
-import "@/app/lib/db";
 
 export default function About() {
   return (
