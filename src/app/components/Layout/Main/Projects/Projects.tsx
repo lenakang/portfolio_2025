@@ -12,7 +12,6 @@ export default async function Projects() {
       <Container>
         <div className={styles.projects__intro}>
           <h2>projects</h2>
-          <Link href="/projects">View More →</Link>
         </div>
       </Container>
       <div className={styles.projects__list}>
